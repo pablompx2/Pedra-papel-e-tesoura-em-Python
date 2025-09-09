@@ -1,0 +1,20 @@
+# Pedra-papel-e-tesoura-em-Python
+
+import random
+
+opcoes = ('pedra', 'papel', 'tesoura')
+jogador = input("Digite pedra, papel ou tesoura : ")
+computador = random.choice (opcoes)
+ 
+print(f"Voce escolheu: {jogador}")
+print(f"O computador escolheu: {computador}")
+
+if jogador == computador:
+    print("Empate!")
+    
+elif(jogador == "Tesoura" and computador == "Papel") or \
+        (jogador == "pedra" and computador == "Papel") or \
+        (jogador == "papel" and computador == "tesoura") :             
+    print("Voce venceu!")    
+else:
+    print("Voce perdeu!") 
